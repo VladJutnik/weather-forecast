@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Прогноз погоды по городам </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="wrapper ">
+        <header>
+            <h5>Прогноз</h5>
+            <i class=""><- Вернуться назад</i>
+        </header>
+        <section class="input-part">
+            <p class="info-txt"></p>
+            <input type="text" id="field" placeholder="Ведите название города" spellcheck="false" required>
+            <div class="separator"></div>
+            <button id="search">Ваше место положение</button>
+        </section>
+        <section class="weather-part">
+            <img src="" alt="Погода">
+            <div class="temp">
+                <span class="numb"></span>
+                <span class="deg">*</span>C
+            </div>
+            <div class="weather"></div>
+            <div class="location">
+                <span>_, _</span>
+            </div>
+            <div class="bottom-detalis">
+               <div class="colum feels">
+                    <div class="detalis">
+                        Ощущаеться как:<br>
+                        <div class="temp">
+                            <span class="numb"></span>
+                            <span class="deg">*</span>C
+                        </div>
+                    </div>
+               </div>
+               <div class="colum humidity">
+                    <div class="detalis">
+                        Влажность: <br>
+                        <div class="temp">
+                            <span class="numb"></span>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </section>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
